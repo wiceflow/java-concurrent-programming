@@ -1,5 +1,7 @@
 package com.wiceflow.example001.demo004;
 
+import java.util.concurrent.CopyOnWriteArrayList;
+
 /**
  * @author BF
  * @date 2018/3/8
@@ -8,6 +10,7 @@ package com.wiceflow.example001.demo004;
 public class DirtyRead {
     private String username = "bjsxt";
     private String password = "123";
+    CopyOnWriteArrayList arrayList = new CopyOnWriteArrayList();
 
     public synchronized void setValue(String username, String password) {
         this.username = username;
