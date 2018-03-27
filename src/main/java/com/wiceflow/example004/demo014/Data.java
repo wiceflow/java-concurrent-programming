@@ -5,6 +5,10 @@ package com.wiceflow.example004.demo014;
  */
 public interface Data {
 
+	/**
+	 * 统一返回数据
+	 * @return
+	 */
 	String getRequest();
 
 }
