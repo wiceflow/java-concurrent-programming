@@ -35,7 +35,7 @@ public class StringThread implements Runnable{
         StringBuilder sb = new StringBuilder();
         sb.append(LOCK_PREFIX);
         sb.append(ip);
-        String lock = sb.toString().intern();
+        String lock = sb.toString();
         System.out.println("构建了锁[" + lock + "]");
         return lock;
     }
